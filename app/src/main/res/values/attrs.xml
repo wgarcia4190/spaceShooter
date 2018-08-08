@@ -1,0 +1,8 @@
+<resources>
+
+    <declare-styleable name="SpaceText">
+        <attr name="font" format="string" />
+        <attr name="toUpperCase" format="boolean"/>
+    </declare-styleable>
+
+</resources>

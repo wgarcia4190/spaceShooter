@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:space="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="@dimen/dialog_height"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg">
+
+    <com.softcube.spaceshooter.view.components.SpaceShooterTextView
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/pause"
+        android:textColor="@color/text_color"
+        space:font="Adore64.ttf" />
+
+    <ImageView
+        android:id="@+id/btn_resume"
+        style="@style/iconButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/resume" />
+
+    <ImageView
+        android:id="@+id/btn_exit"
+        style="@style/iconButton"
+        android:layout_alignBottom="@+id/btn_resume"
+        android:layout_toRightOf="@+id/btn_resume"
+        android:src="@drawable/exit" />
+
+    <ImageView
+        android:id="@+id/btn_sound"
+        style="@style/iconButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/sounds_on_no_bg" />
+
+    <ImageView
+        android:id="@+id/btn_music"
+        style="@style/iconButton"
+        android:layout_alignBottom="@+id/btn_sound"
+        android:layout_toLeftOf="@+id/btn_sound"
+        android:src="@drawable/music_on_no_bg" />
+
+</RelativeLayout>

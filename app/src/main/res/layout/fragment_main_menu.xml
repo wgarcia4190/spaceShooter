@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:space="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main.MainMenuFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_start_big" />
+
+    <com.softcube.spaceshooter.view.components.SpaceShooterTextView
+        android:id="@+id/main_title"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/game_title"
+        android:textColor="@color/text_color"
+        space:font="Adore64.ttf" />
+
+    <com.softcube.spaceshooter.view.components.SpaceShooterTextView
+        android:id="@+id/main_subtitle"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/game_subtitle"
+        android:textColor="@color/text_color"
+        space:font="Adore64.ttf" />
+
+
+    <com.softcube.spaceshooter.view.components.SpaceShooterButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_square_bg"
+        android:text="@string/start"
+        space:font="Adore64.ttf" />
+
+
+    <ImageView
+        android:id="@+id/btn_sound"
+        style="@style/iconButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/sounds_on_no_bg" />
+
+    <ImageView
+        android:id="@+id/btn_music"
+        style="@style/iconButton"
+        android:layout_alignBottom="@+id/btn_sound"
+        android:layout_toLeftOf="@+id/btn_sound"
+        android:src="@drawable/music_on_no_bg" />
+
+    <ImageView
+        android:id="@+id/btn_sign_in"
+        style="@style/iconButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_play_games_badge_green" />
+
+    <ImageView
+        android:id="@+id/btn_achievements"
+        style="@style/iconButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_play_games_badge_achievements_green" />
+
+    <ImageView
+        android:id="@+id/btn_leaderboards"
+        style="@style/iconButton"
+        android:layout_alignBottom="@+id/btn_sound"
+        android:layout_toRightOf="@+id/btn_achievements"
+        android:src="@drawable/ic_play_games_badge_leaderboards_green" />
+
+</RelativeLayout>
